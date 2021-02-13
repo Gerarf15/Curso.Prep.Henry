@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let productos = [
+			{name:'coca', price:12 , cant:2} ,
+			{name:'sprite', price:11 , cant:1} 
+		]
+
+		let caja=0
+
+		function subtotal( { cant , price } ){
+			return cant * price
+		}
+
+		productos.map( item => caja += subtotal(item) )
+
+		console.log(caja)
+
+	</script>
+</body>
+</html>
