@@ -80,7 +80,10 @@ function filter(array) {
   //     nuevo.push(array[i])
   //   }
   // }
-  
+  let filtrar = array.filter(function(arr){
+    return arr[0] === "a"
+  })
+  return filtrar
 }
 
 // No modificar nada debajo de esta línea
